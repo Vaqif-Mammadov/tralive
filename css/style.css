@@ -1,0 +1,218 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+header{
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+padding: 15px 40px; 
+}
+header .left{
+    width: 15%;
+}
+header .left img{
+    width: 100%;
+}
+header .center{
+    width: 65%;
+}
+header .center ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;   
+}
+header .right{
+width: 20%;
+text-align: end;
+}
+header .center li a{
+    color: #00095E;
+    font-size: 18px;
+    position: relative;
+    transition: 0.4s;
+}
+.center a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #4e5cdb;
+    width: 0%;
+    height: 2px;
+    transition: 0.4s;
+}
+.center a:hover::after{
+    width: 100%;   
+}
+.center a:hover{
+    color: #4e5cdb;
+}
+.right a{
+    background-color: #FFC800;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#first{
+   text-align: center;
+   height: 100vh;
+   
+}
+#first h1{
+    color: #00095E;
+    font-size: 60px;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+}
+#first h1::after{
+    position: absolute;
+    content: '';
+    background-color: #FFC800;
+    width: 34%;
+    height: 11px;
+    bottom: 14px;
+    left: 33%;
+    z-index: -1;
+}
+#first p{
+    font-size: 20px;
+    color: #00095E;
+    margin: 3rem 0;
+}
+#first a{
+    padding: 20px 40px;
+    background-color: #00095E;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+    z-index: 1;
+  
+}
+#first a::before{
+    content: "";
+    position: absolute;
+    transition: 0.4s;
+    top:-100%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-color: #FFC800;
+    
+}
+#first a:hover::before{
+    top: 0;
+}
+
+
+#second{
+    background-image: url(/media/havai.webp);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    text-align: center;
+    margin: 2rem 0;
+}
+@keyframes demo{
+    10%{
+        margin-right: -15rem;
+    }
+    50%{
+        margin-left: 15rem;
+    }
+    
+}
+#second img{
+
+    animation: demo 3s infinite alternate  ;
+    width: 50%; 
+}
+
+#third {
+padding: 40px;
+text-align: center;
+
+}
+#third .top p{
+    color: #4e5cdb;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#third .top h2{
+    color: #00095E;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+#third .bottom{
+    padding: 20px 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.card img{
+    width: 100%;
+    transition: 0.4s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-top{
+    overflow: hidden;
+}
+.card-bot{
+    padding: 30px 0;
+
+}
+
+.card-bot ul{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-bot h6{
+    color: #00095E;
+    font-size: 26px;
+}
+.card-bot ul span{
+    color: #00095E;
+    font-size: 18px;
+}
+.card-bot p{
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+}
+.card-bot a{
+    color: #000;
+    font-size: 16px;
+    margin-right: 30px;
+    padding: 7px 14px;
+    border-radius: 30%;
+    background-color: #e8eef5;
+    color: #4e5cdb;
+    font-weight: bold;
+}
